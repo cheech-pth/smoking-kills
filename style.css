@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #181818;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 1px black;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+}
+
+#video {
+  margin: 50px;
+}
+
+form {
+  margin: 20px;
+}
+
+#submit,
+#email {
+  min-width: fit-content;
+  padding: 10px;
+  font-size: 0.8rem;
+  background: white;
+  color: black;
+  border: none;
+}
+
+p {
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  gap: 25px;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 380px;
+  min-width: 230px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  background-position: center;
+  background-size: cover;
+  padding: 25px;
+}
+
+#a1 {
+  background-image: url("https://consequence.net/wp-content/uploads/2016/04/screen-shot-2016-04-06-at-2-48-08-pm.png?w=1031&h=580&crop=1&resize=1031%2C580&quality=80&strip");
+}
+
+#a2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/3/31/Blink-182_-_Greatest_Hits_cover.jpg");
+  background-size: auto;
+}
+
+#a3 {
+  background-image: url("https://www.directoryofillustration.com/images/artistimages/images/8834_160617.jpg");
+}
+
+button {
+  background: #000000ab;
+  color: white;
+  border: solid 1px white;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: red;
+  }
+}
